@@ -41,6 +41,10 @@ function draw() {
   rect(750, 600, 10, 100);
 
   Engine.update(engine);
+
+  if (keyCode==DOWN_ARROW){
+	  ball.velocityY= 10;
+  }
   
   ground.display();
   ball.display();
